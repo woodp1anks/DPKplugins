@@ -1,0 +1,72 @@
+name: HotBarKit
+main: woodp1anks.plugins.hotbarkit.HotBarKit
+version: 1.0.0
+author: woodp1anks
+permissions:
+  HotBarKit.*:
+    default: op
+    description: "all permissions of hotBarKit."
+    children:
+      HotBarKit.KitSystem: true
+  HotBarKit.KitSystem:
+    default: op
+    description: "use hotBarKit system(add kit,edit kit,del kit,load kit,see kit list)"
+    children:
+      HotBarKit.SaveKit: true
+      HotBarKit.KitList: true
+      HotBarKit.DeleteKit: true
+      HotBarKit.LoadKit: true
+  HotBarKit.SaveKit:
+    default: op
+    description: "edit or add a hotBarKit."
+  HotBarKit.KitList:
+    default: op
+    description: "view the kit list."
+  HotBarKit.DeleteKit:
+    default: op
+    description: "delete a kit."
+  HotBarKit.LoadKit:
+    default: op
+    description: "load a kit to hotBar."
+commands:
+  SaveKit:
+    aliases:
+      - "SaveHotBarKit"
+      - "SK"
+      - "S"
+      - "SKit"
+    usage: "/EditKit <kitName>"
+    description: "Edit or add a hot bar kit,the kit will edit to your hot bar."
+    permission: "HotBarKit.SaveKit"
+    permission-message: "§c§lHot§b§lBar§a§lKit §cYou have no permission to do that!"
+  KitList:
+    aliases:
+      - "HotBarKitList"
+      - "KL"
+      - "KList"
+    usage: "/KitList"
+    description: "See all hot bar kits in server."
+    permission: "HotBarKit.KitList"
+    permission-message: "§c§lHot§b§lBar§a§lKit §cYou have no permission to do that!"
+  DeleteKit:
+    aliases:
+      - "DelKit"
+      - "DelHotBarKit"
+      - "DeleteHotBarKit"
+      - "DK"
+      - "D"
+      - "DKit"
+    usage: "/DeleteKit <kitName>"
+    description: "delete a hot bar kit."
+    permission: "HotBarKit.DeleteKit"
+    permission-message: "§c§lHot§b§lBar§a§lKit §cYou have no permission to do that!"
+  LoadKit:
+    aliases:
+      - "LoadHotBarKit"
+      - "L"
+      - "LK"
+      - "LKit"
+    usage: "/LoadKit <kitName>"
+    description: "load a kit to your hot bar."
+    permission: "HotBarKit.LoadKit"
+    permission-message: "§c§lHot§b§lBar§a§lKit §cYou have no permission to do that!"

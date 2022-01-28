@@ -1,0 +1,10 @@
+messages:
+  kit-list-head: "&b&lKit&a&lList&7-------------"
+  kit-list-kit-prefix: "&b- &a"
+  wrong-command: "&c&lHot&b&lBar&a&lKit &cYou send a wrong command!"
+  no-console: "&c&lHot&b&lBar&a&lKit &cConsole cant use this command!"
+  no-this-kit: "&c&lHot&b&lBar&a&lKit &cThere is no this kit!"
+  no-kit-in-server: "&c&lHot&b&lBar&a&lKit &cThere are no any kit in server!"
+  success-save-kit: "&c&lHot&b&lBar&a&lKit &eSuccess save a kit!"
+  success-load-kit: "&c&lHot&b&lBar&a&lKit &eSuccess load a kit!"
+  success-delete-kit: "&c&lHot&b&lBar&a&lKit &eSuccess delete a kit!"

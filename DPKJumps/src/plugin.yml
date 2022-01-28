@@ -1,0 +1,13 @@
+name: DPKJumps
+main: dpk.plugins.dpkjumps.DPKJumps
+version: 1.0
+author: woodp1anks
+permissions:
+  DPKJumps.*:
+    default: op
+    description: "all permission DPKJumps.xxx."
+    children:
+      DPKJumps.unlockAll: true
+  DPKJumps.unlockAll:
+    default: op
+    description: "unlock all jumpGifts."

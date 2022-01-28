@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="GMP">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Desktop/GMP.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

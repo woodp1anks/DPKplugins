@@ -1,0 +1,50 @@
+name: DPKRank
+main: dpk.plugins.dpkrank.DPKRank
+version: 0.5
+commands:
+  setrank:
+    aliases:
+      - "s"
+      - "sr"
+      - "srk"
+      - "str"
+      - "strk"
+    usage: "/setRank <player> <rank>"
+    description: "set a player's rank."
+    permission: "dpkRank.setRank.setRank"
+    permission-message: "§6§lD§f§lPK §cyou cant do that!are you a admin?"
+  setweebrank:
+    aliases:
+      - "s"
+      - "swr"
+      - "swrk"
+    usage: "/setWeebRank <player> <weebrank>"
+    description: "set a player's weeb-rank."
+    permission: "dpkRank.setRank.setWeebRank"
+    permission-message: "§6§lD§f§lPK §cyou cant do that!are you a admin?"
+  setPKSrank:
+    aliases:
+      - "s"
+      - "spr"
+      - "spksr"
+    usage: "/setPKSRank <player> <pksrank>"
+    description: "set a player's PKS-rank."
+    permission: "dpkRank.setRank.setPKSRank"
+    permission-message: "§6§lD§f§lPK §cyou cant do that!are you a admin?"
+  setSubRank:
+    aliases:
+      - "s"
+      - "ss"
+      - "ssr"
+    usage: "/setSubRank <player> <subrank>"
+    description: "set a player's sub-rank"
+    permission: "dpkRank.setRank.setSubRank"
+    permission-message: "§6§lD§f§lPK §cyou cant do that!are you a admin?"
+  switch:
+    aliases:
+      - "s"
+      - "sw"
+      - "sh"
+      - "swh"
+    usage: "/switch <rank>"
+    description: "switch display what rank on prefix"

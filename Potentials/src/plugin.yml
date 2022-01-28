@@ -1,0 +1,107 @@
+name: Potentials
+main: dpk.plugins.potentials.Potentials
+version: 1.0
+author: woodp1anks
+commands:
+  play:
+    aliases:
+      - "p"
+      - "py"
+    usage: "/play <map>"
+    description: "begin to play a map."
+  stopPlay:
+    aliases:
+      - "s"
+      - "sp"
+      - "stp"
+    usage: "/stopPlay"
+    description: "stop playing the map you are playing."
+  ranking:
+    aliases:
+      - "rk"
+      - "seeRanking"
+    usage: "/ranking [player]"
+    description: "get your/a player's RKS."
+  mapList:
+    aliases:
+      - "m"
+      - "ml"
+    usage: "/mapList <page>"
+    description: "view all maps in server."
+  rePlay:
+    aliases:
+      - "rp"
+    usage: "/rePlay"
+    description: "restart map timing."
+  broad:
+    aliases:
+      - "top"
+      - "b"
+      - "bd"
+      - "br"
+      - "brd"
+    usage: "/broad <map>"
+    description: "check a map's top 10."
+  RKSet:
+    aliases:
+      - "rs"
+      - "s"
+    usage: "/RKSet <player> <amount>"
+    description: "set a player's RKS."
+    permission: "ptt.rkset"
+    permission-message: "§6§lD§f§lPK > §cThere is not the permission which you have to do this"
+  done:
+    aliases:
+      - "d"
+      - "de"
+    usage: "/done <player>"
+    description: "Force a player to finish the map."
+    permission: "ptt.opDone"
+    permission-message: "§6§lD§f§lPK > §cThere is not the permission which you have to do this"
+  delMap:
+    aliases:
+      - "d"
+      - "dm"
+      - "dmp"
+    usage: "/delMap <map>"
+    description: "delete a map in the server."
+    permission: "ptt.delMap"
+    permission-message: "§6§lD§f§lPK > §cThere is not the permission which you have to do this"
+  editMap:
+    aliases:
+      - "e"
+      - "em"
+      - "emp"
+    usage: "/editMap <map> <edit> [more]"
+    description: "edit a map in the server."
+    permission: "ptt.editMap"
+    permission-message: "§6§lD§f§lPK > §cThere is not the permission which you have to do this"
+permissions:
+  ptt.*:
+    default: op
+    description: "all permissions of ptt.xxx"
+    children:
+      ptt.cheat-bypass: true
+      ptt.otherRKS: true
+      ptt.rkset: true
+      ptt.opDone: true
+      ptt.delMap: true
+      ptt.editMap: true
+  ptt.otherRKS:
+    default: op
+    description: "see other's rks."
+  ptt.cheat-bypass:
+    default: op
+    description: "bypass ptt anti-admin-cheat system."
+  ptt.rkset:
+    default: op
+    description: "set a player's rks."
+  ptt.opDone:
+    default: op
+    description: "use opDone command."
+  ptt.delMap:
+    default: op
+    description: "delete a map."
+  ptt.editMap:
+    default: op
+    description: "edit a map."

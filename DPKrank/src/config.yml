@@ -1,0 +1,24 @@
+messages:
+  wrong-command: "§6§lD§f§lPK §cwrong command!"
+  player-offline: "§6§lD§f§lPK §cplayer not online!"
+  rankup: "§6§lD§f§lPK §enow your rank is "
+  broadcast-rankup-front: "§6§lD§f§lPK §e "
+  broadcast-rankup-after: " is rankup to "
+  first-join-kick: "§6§lD§f§lPK §eplease re-join"
+  wrong-switch: "§6§lD§f§lPK §cwrong switch!you can switch §a§lmain,weeb,pks,sub"
+  switched-rank: "§6§lD§f§lPK §enow you are switched prefix to "
+ranks:
+  main-rank:
+    rank1: "§a[§fI§a]"
+    rank2: "§a[§3II§a]"
+    rank3: "§e[§6III§e]"
+  pks-rank:
+    rank1: "§a<§f一§a>"
+    rank2: "§3<§b二§3>"
+  weeb-rank:
+    rank1: "§8<<§7I§8>>"
+    rank2: "§a<<§8II§a>>"
+    rank3: "§b<<§aIII§b>>"
+  sub-rank:
+    rank1: "§a[1]"
+    rank2: "§7[§92§7]"

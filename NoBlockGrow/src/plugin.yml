@@ -1,0 +1,3 @@
+name: NoBlockGrow
+main: dpk.plugins.noblockgrow.NoBlockGrow
+version: 1.0

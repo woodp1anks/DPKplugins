@@ -1,0 +1,74 @@
+name: DPKCreative
+main: dpk.plugins.dpkcreative.DPKCreative
+version: 1.0
+permissions:
+  DPKCreative.*:
+    default: op
+    description: "all permissions DPKCreative.xxx ."
+    children:
+      DPKCreative.noClear: true
+      DPKCreative.setHub: true
+      DPKCreative.delHub: true
+  DPKCreative.noClear:
+    default: op
+    description: "no clear items,effects when spawn from creativeWorld."
+  DPKCreative.setHub:
+    default: op
+    description: "set a hub,use /setHub command."
+  DPKCreative.delHub:
+    default: op
+    description: "delete a hub,use /delHub command."
+commands:
+  hub:
+    aliases:
+      - "s"
+      - "sp"
+      - "sn"
+      - "spawn"
+    usage: "/hub [hubName]"
+    description: "warp to a hub."
+  creativeTP:
+    aliases:
+      - "c"
+      - "ct"
+      - "ctp"
+    usage: "/creativeTP <x> <y> <z>"
+    description: "teleport at creative world."
+  hubList:
+    aliases:
+      - "s"
+      - "sl"
+      - "st"
+      - "h"
+      - "hl"
+      - "ht"
+      - "spawnList"
+    usage: "/hubList"
+    description: "see all the hubs in server."
+  setHub:
+    aliases:
+      - "s"
+      - "ss"
+      - "ssp"
+      - "sh"
+      - "shb"
+      - "sb"
+      - "setHub"
+    usage: "/setHub <hubName>"
+    description: "set a hub."
+    permission: "DPKCreative.setHub"
+    permission-message: "§6§lD§f§lPK > §cThere is not the permission which you have to do this"
+  delHub:
+    aliases:
+      - "deleteSpawn"
+      - "delSpawn"
+      - "deleteHub"
+      - "ds"
+      - "dh"
+      - "dhb"
+      - "dsn"
+      - "d"
+    usage: "/delHub <hubName>"
+    description: "delete a hub."
+    permission: "DPKCreative.delHub"
+    permission-message: "§6§lD§f§lPK > §cThere is not the permission which you have to do this"

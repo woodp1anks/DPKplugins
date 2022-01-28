@@ -1,0 +1,28 @@
+name: DPKcoin
+main: dpk.plugins.dpkcoin.DPKcoin
+version: 0.0.1
+commands:
+  coin:
+    aliases:
+      - "c"
+      - "cn"
+    usage: "/coin [player]"
+    description: "check how many coin do you have"
+  addcoin:
+    aliases:
+      - "a"
+      - "ac"
+      - "acn"
+    usage: "/addcoin <coin> <player>"
+    description: "give how many coins to a player"
+    permission: "dpkcoin.command.addcoin"
+    permission-message: "§6D§fPK §cdon't do that,you are not admin"
+  takecoin:
+    aliases:
+      - "t"
+      - "tc"
+      - "tcn"
+    usage: "/takecoin <coin> <player>"
+    description: "take how many coins from a player"
+    permission: "dpkcoin.command.takecoin"
+    permission-message: "§6D§fPK §cdon't do that,you are not admin"

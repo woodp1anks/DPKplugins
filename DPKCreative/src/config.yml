@@ -1,0 +1,31 @@
+default-spawn: "DPK"
+creative-worlds:
+  - "creative"
+  - "creative2"
+maps:
+  DPKMSTRMILONFAZHUN:
+    player-broad:
+      - "114player"
+    time-broad:
+      - 1145.14
+    pos:
+      x: 1
+      y: 1
+      z: 1
+    end:
+      x: 1
+      y: 1000
+      z: 100
+    world: World
+    rksReq: 10
+    finishRKS: 11
+messages:
+  wrong-command: "§6§lD§f§lPK > §cYou send a wrong command!"
+  not-in-creative-world: "§6§lD§f§lPK > §cYou are not in creative world!"
+  no-this-hub: "§6§lD§f§lPK > §cThere is no this hub!"
+  no-any-hub-in-server: "§6§lD§f§lPK > §cWTF?this fucking owner has not set a hub~!§a§l腐竹是个大§b§l傻b§a§l,甚至没有设置一个大厅!!"
+  success-tp: "§6§lD§f§lPK > §eSuccess teleport you to §a§l"
+  success-set-hub: "§6§lD§f§lPK > §eSuccess set hub!§a§lFOR EDIT A HUB,JUST USE THIS CMD."
+  success-del-hub: "§6§lD§f§lPK > §eSuccess delete hub."
+  hub-list-head: "§6§lD§f§lPK §7----- §aHubList"
+  hub-list-front-spawn: "§6- §7"

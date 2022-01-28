@@ -1,0 +1,10 @@
+name: PlayerBoom
+version: 1.0
+main: dpk.plugins.playerboom.PlayerBoom
+commands:
+  boom:
+    aliases:
+      - "b"
+      - "bm"
+    usage: "/boom <player>"
+    description: "boom a player."

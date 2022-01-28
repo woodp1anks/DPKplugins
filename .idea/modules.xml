@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DPKCreative/DPKCreative.iml" filepath="$PROJECT_DIR$/DPKCreative/DPKCreative.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DPKEco/DPKEco.iml" filepath="$PROJECT_DIR$/DPKEco/DPKEco.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DPKrank/DPKRank.iml" filepath="$PROJECT_DIR$/DPKrank/DPKRank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HotBarKit/HotBarKit.iml" filepath="$PROJECT_DIR$/HotBarKit/HotBarKit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Potentials/Potentials.iml" filepath="$PROJECT_DIR$/Potentials/Potentials.iml" />
+    </modules>
+  </component>
+</project>

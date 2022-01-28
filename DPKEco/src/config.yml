@@ -1,0 +1,48 @@
+#DPKEco plugin 0.1 -by wood
+ess-eco-to-fragments-when-first: true
+default-fragments: 30
+default-memory: 2
+memory-fragments-exchange-rate: 100
+fragments-memory-exchange-rate: 0.01
+
+messages:
+  wrong-command: "§6§lD§f§lPK §cWrong command"
+  no-console: "§6§lD§f§lPK §cYou are console! only player can use this command!"
+  player-offline: "§6§lD§f§lPK §cThis player is not online!"
+  no-enough-fragments: "§6§lD§f§lPK §cYou have no enough fragments!"
+  no-enough-memory: "§6§lD§f§lPK §cYou have no enough memories!"
+  player-no-enough-fragments: "§6§lD§f§lPK §cPlayer have no enough fragments!"
+  player-no-enough-memory: "§6§lD§f§lPK §cThis player have no enough memory!"
+  wrong-type: "§6§lD§f§lPK §cYou can only exchange to §a§lFragments,memory"
+  cant-exchange: "§6§lD§f§lPK §cYou cant exchange!"
+  check-fragments: "§6§lD§f§lPK §eYou have fragments: §b§l "
+  other-fragments-front: "§6§lD§f§lPK §a§l"
+  other-fragments-after: " §eHave fragments: §b§l "
+  success-give-fragments: "§6§lD§f§lPK §eYou successful give a player's fragments: §b§l "
+  get-fragments: "§6§lD§f§lPK §eYou get fragments: §b§l "
+  success-take-fragments: "§6§lD§f§lPK §eYou successful take a player's fragments: §b§l "
+  fragments-been-take: "§6§lD§f§lPK §eYour fragments was been take: §b§l "
+  success-set-fragments: "§6§lD§f§lPK §eYou successful set a player's fragments: §b§l "
+  fragments-been-set: "§6§lD§f§lPK §eYour fragments was been set: §b§l "
+  success-pay-fragments-front: "§6§lD§f§lPK §eYou have send §b§l"
+  success-pay-fragments-after: " §eFragments to §a§l"
+  get-fragments-from-front: "§6§lD§f§lPK §eYou get §b§l"
+  get-fragments-from-after: " §eFragments from §a§l"
+  check-memory: "§6§lD§f§lPK §eYou have memories: §6§l "
+  get-memory: "§6§lD§f§lPK §eYou get memories: §6§l"
+  other-memory-front: "§6§lD§f§lPK §a§l"
+  other-memory-after: " §eHave memories: §6§l"
+  success-give-memory-front: "§6§lD§f§lPK §eYou give §a§l"
+  success-give-memory-after: " §eMemories: §6§l"
+  success-pay-memory-front: "§6§lD§f§lPK §eYou pay §6§l"
+  success-pay-memory-after: " §eMemories to §a§l"
+  get-pay-memory-front: "§6§lD§f§lPK §eYou get §6§l"
+  get-pay-memory-after: " §eMemories from §a§l"
+  take-memory: "§6§lD§f§lPK §eYour memory was been removed: §6§l"
+  success-take-memory-front: "§6§lD§f§lPK §eYou take §6§l"
+  success-take-memory-after: " §eMemories from §a§l"
+  success-set-memory-front: "§6§lD§f§lPK §eYou set §a§l"
+  success-set-memory-after: "§e's memory to §6§l"
+  memory-been-set: "§6§lD§f§lPK §eYour memory now is §6§l"
+  success-exchange-front: "§6§lD§f§lPK §eYou success exchange §a§l"
+  success-exchange-after: " §eto §b§l"

@@ -1,0 +1,83 @@
+name: DPKEco
+main: dpk.plugins.dpkeco.DPKEco
+version: 0.1
+commands:
+  exchange:
+    aliases:
+      - "e"
+      - "ex"
+      - "exc"
+    usage: "/exchange <to-type>"
+    description: "exchange fragments/memories."
+  fragments:
+    aliases:
+      - "f"
+      - "fm"
+    usage: "/fragments [player]"
+    description: "get how many fragments do you have."
+  memory:
+    aliases:
+      - "m"
+      - "mr"
+    usage: "/memory [player]"
+    description: "get how many memories do you have."
+  fragmentsPay:
+    aliases:
+      - "fp"
+      - "fmp"
+    usage: "/fragmentsPay <player> <amount>"
+    description: "pay fragments to a player."
+  fragmentsGive:
+    aliases:
+      - "fg"
+      - "fmg"
+    usage: "/fragmentsGive <player> <amount>"
+    description: "give a player's fragments."
+    permission: "DPKEco.eco.fragments.give"
+    permission-message: "§6§lD§f§lPK §cYou cant do that! are you a admin?"
+  fragmentsTake:
+    aliases:
+      - "ft"
+      - "fmt"
+    usage: "/fragmentsTake <player> <amount>"
+    description: "take a player's fragments."
+    permission: "DPKEco.eco.fragments.take"
+    permission-message: "§6§lD§f§lPK §cYou cant do that! are you a admin?"
+  fragmentsSet:
+    aliases:
+      - "fs"
+      - "fms"
+    usage: "/fragmentsSet <player> <amount>"
+    description: "set a player's fragments."
+    permission: "DPKEco.eco.fragments.set"
+    permission-message: "§6§lD§f§lPK §cYou cant do that! are you a admin?"
+  memoryPay:
+    aliases:
+      - "mp"
+      - "mrp"
+    usage: "/memoryPay <player> <amount>"
+    description: "pay memories to a player."
+  memoryGive:
+    aliases:
+      - "mg"
+      - "mrg"
+    usage: "/memoryGive <player> <amount>"
+    description: "give a player memories."
+    permission: "DPKEco.eco.memory.give"
+    permission-message: "§6§lD§f§lPK §cYou cant do that! are you a admin?"
+  memoryTake:
+    aliases:
+      - "mt"
+      - "mrt"
+    usage: "/memoryTake <player> <amount>"
+    description: "take a player's memories."
+    permission: "DPKEco.eco.memory.take"
+    permission-message: "§6§lD§f§lPK §cYou cant do that! are you a admin?"
+  memorySet:
+    aliases:
+      - "ms"
+      - "mrs"
+    usage: "/memorySet <player> <amount>"
+    description: "set a player's memories."
+    permission: "DPKEco.eco.memory.set"
+    permission-message: "§6§lD§f§lPK §cYou cant do that! are you a admin?"

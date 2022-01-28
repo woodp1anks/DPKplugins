@@ -1,0 +1,3 @@
+messages:
+  wrong-command: "&a&lInventory&b&lSaver &c你发送了一个错误的指令!"
+  success-add-inventory: "&a&lInventory&b&lSaver &e成功添加了一个物品栏!"

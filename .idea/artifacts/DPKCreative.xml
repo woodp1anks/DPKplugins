@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="DPKCreative">
+    <output-path>$USER_HOME$/Desktop</output-path>
+    <root id="archive" name="DPKCreative.jar">
+      <element id="module-output" name="DPKCreative" />
+    </root>
+  </artifact>
+</component>

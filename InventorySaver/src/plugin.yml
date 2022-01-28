@@ -1,0 +1,25 @@
+name: InventorySaver
+main: dpk.plugins.inventorysaver.InventorySaver
+version: 1.0.0
+permissions:
+  InventorySaver.*:
+    default: op
+    description: "permissions:InventorySaver.xxx"
+    children:
+      InventorySaver.InventorySystem: true
+  InventorySaver.InventorySystem:
+    default: op
+    description: "use inventory system(add inventory,edit inventory,delete inventory,load inventory)"
+    children:
+      InventorySaver.AddInventory: true
+      InventorySaver.EditInventory: true
+      InventorySaver.DeleteInventory: true
+      InventorySaver.LoadInventory: true
+  InventorySaver.AddInventory:
+    default: op
+    description: "add a inventory"
+  InventorySaver.EditInventory:
+    default: op
+    description: "edit a inventory"
+  InventorySaver.DeleteInventory:
+    default: op
