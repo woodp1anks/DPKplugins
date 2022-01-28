@@ -44,6 +44,7 @@ public class Potentials extends JavaPlugin {
         Bukkit.getPluginCommand("mapList").setExecutor(new MapList());
         Bukkit.getPluginCommand("rePlay").setExecutor(new RePlay());
         Bukkit.getPluginCommand("broad").setExecutor(new Broad());
+        Bukkit.getPluginCommand("mapInfo").setExecutor(new MapInfo());
         ByteArrayOutputStream exm = new ByteArrayOutputStream();
         try {
             ObjectOutputStream outputStream = new ObjectOutputStream(exm);

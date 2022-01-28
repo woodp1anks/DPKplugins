@@ -2,6 +2,10 @@ playing-cheat: true
 broad-prefix-color: "b"
 broad-player-name-color: "3"
 messages:
+  info-head: "&6&lD&f&lPK &7- &a&l"
+  info-world: "&b&lWorld: &3"
+  info-rksReq: "&b&lRksReq: &3"
+  info-finishRKS: "&b&lFinishRKS: &3"
   broad-head: "&6&lD&f&lPK &7- &a&lBroad &7- &c&l"
   wrong-command: "&6&lD&f&lPK > &cYou send a wrong command!"
   playing-other-map: "&6&lD&f&lPK > &cYou are playing other map! please finish it first!"
