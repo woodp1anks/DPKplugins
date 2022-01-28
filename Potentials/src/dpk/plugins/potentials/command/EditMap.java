@@ -61,7 +61,7 @@ public class EditMap implements CommandExecutor {
             double z = location.getZ();
             float yaw = location.getYaw();
             float pitch = location.getPitch();
-            Potentials.config.set("maps." + strings[0] + ".pos.x",x);
+            Potentials.config.set("maps." + strings[0] + ".pos.xa",x);
             Potentials.config.set("maps." + strings[0] + ".pos.y",y);
             Potentials.config.set("maps." + strings[0] + ".pos.z",z);
             Potentials.config.set("maps." + strings[0] + ".pos.yaw",yaw);
