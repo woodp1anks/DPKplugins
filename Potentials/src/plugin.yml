@@ -22,6 +22,13 @@ commands:
       - "seeRanking"
     usage: "/ranking [player]"
     description: "get your/a player's RKS."
+  pttRanking:
+    aliases:
+      - "pr"
+      - "prk"
+      - "seePttRanking"
+    usage: "/pttRanking [player]"
+    description: "see your/other player's PTT."
   mapList:
     aliases:
       - "m"
@@ -56,6 +63,13 @@ commands:
     description: "set a player's RKS."
     permission: "ptt.rkset"
     permission-message: "§6§lD§f§lPK > §cThere is not the permission which you have to do this"
+  PTTSet:
+    aliases:
+      - "ps"
+    usage: "/PTTSet <player> <ptt>"
+    description: "set a player's PTT."
+    permission: "ptt.pttset"
+    permission-message: "§6§lD§f§lPK > §cThere is not the permission which you have to do this"
   done:
     aliases:
       - "d"
@@ -89,19 +103,27 @@ permissions:
     children:
       ptt.cheat-bypass: true
       ptt.otherRKS: true
+      ptt.otherPTT: true
       ptt.rkset: true
+      ptt.pttset: true
       ptt.opDone: true
       ptt.delMap: true
       ptt.editMap: true
   ptt.otherRKS:
     default: op
     description: "see other's rks."
+  ptt.otherPTT:
+    default: op
+    description: "see other's ptt."
   ptt.cheat-bypass:
     default: op
     description: "bypass ptt anti-admin-cheat system."
   ptt.rkset:
     default: op
     description: "set a player's rks."
+  ptt.pttset:
+    default: op
+    description: "set a player's ptt."
   ptt.opDone:
     default: op
     description: "use opDone command."

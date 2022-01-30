@@ -25,8 +25,10 @@ public class EditMap implements CommandExecutor {
                 if (!strings[1].equals("world")) {
                     if (!strings[1].equals("finishRKS")) {
                         if (!strings[1].equals("rksReq")) {
-                            commandSender.sendMessage(Config.getMsg("wrong-edit"));
-                            return false;
+                            if (!strings[1].equals("pttReq")) {
+                                commandSender.sendMessage(Config.getMsg("wrong-edit"));
+                                return false;
+                            }
                         }
                     }
                 }
@@ -121,6 +123,14 @@ public class EditMap implements CommandExecutor {
             }
             Potentials.config.set("maps." + strings[0] + ".rksReq",toInt(strings[2]));
             commandSender.sendMessage(Config.getMsg("success-set-map-rksReq"));
+        }
+        if (strings[1].equals("pttReq")) {
+            if (strings.length != 3) {
+                commandSender.sendMessage(Config.getMsg("edit-help-pttReq"));
+                return true;
+            }
+            Potentials.config.set("maps." + strings[0] + ".pttReq",Double.parseDouble(strings[2]));
+            commandSender.sendMessage(Config.getMsg("success-set-map-pttReq"));
         }
         return true;
     }

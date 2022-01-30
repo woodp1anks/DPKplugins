@@ -36,7 +36,9 @@ public class Potentials extends JavaPlugin {
 
         Bukkit.getPluginCommand("play").setExecutor(new Play());
         Bukkit.getPluginCommand("RKSet").setExecutor(new RKSet());
+        Bukkit.getPluginCommand("PTTSet").setExecutor(new PTTSet());
         Bukkit.getPluginCommand("ranking").setExecutor(new CommandRKS());
+        Bukkit.getPluginCommand("pttRanking").setExecutor(new CommandPTT());
         Bukkit.getPluginCommand("stopPlay").setExecutor(new StopPlay());
         Bukkit.getPluginCommand("done").setExecutor(new Done());
         Bukkit.getPluginCommand("delMap").setExecutor(new DelMap());

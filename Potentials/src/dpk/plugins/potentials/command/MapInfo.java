@@ -17,10 +17,12 @@ public class MapInfo implements CommandExecutor {
         String mapName = strings[0];
         String world = Potentials.config.getString("maps." + mapName + ".world");
         int rksReq = Potentials.config.getInt("maps." + mapName + ".rksReq");
+        double pttReq = Potentials.config.getDouble("maps." + mapName + ".pttReq");
         int finishRKS = Potentials.config.getInt("maps." + mapName + ".finishRKS");
         commandSender.sendMessage(Config.getMsg("info-head") + mapName);
         commandSender.sendMessage(Config.getMsg("info-world") + world);
         commandSender.sendMessage(Config.getMsg("info-rksReq") + rksReq);
+        commandSender.sendMessage(Config.getMsg("info-pttReq") + pttReq);
         commandSender.sendMessage(Config.getMsg("info-finishRKS") + finishRKS);
         return true;
     }

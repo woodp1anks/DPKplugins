@@ -10,10 +10,21 @@ import java.util.Date;
 import java.util.List;
 
 public class Map {
+    public static boolean isFirstPlay(String player,String map) {
+        return !Potentials.config.contains("data." + player + "-played-" + map);
+    }
+    public static void setPlayed(String player,String map) {
+        Potentials.config.set("data." + player + "-played-" + map,true);
+    }
     public static boolean checkRKSReq(String player,String map) {
         int rks = RKS.get(player);
         int rksReq = Potentials.config.getInt("maps." + map + ".rksReq");
         return rks >= rksReq;
+    }
+    public static boolean checkPTTReq(String player,String map) {
+        double ptt = PTT.get(player);
+        double pttReq = Potentials.config.getDouble("maps." + map + ".pttReq");
+        return ptt >= pttReq;
     }
     public static boolean checkIsPlayingMap(String player) {
         return Potentials.config.contains("data.playing-map-" + player);
@@ -42,9 +53,9 @@ public class Map {
             return;
         }
         // 符不符合要求
-        if (!checkRKSReq(player,map)) {
+        if (!checkRKSReq(player,map) || !checkPTTReq(player, map)) {
             Player player1 = Bukkit.getPlayer(player);
-            player1.sendMessage(Config.getMsg("no-enough-rks"));
+            player1.sendMessage(Config.getMsg("no-enough"));
             return;
         }
         // 获取地图起点
@@ -90,6 +101,10 @@ public class Map {
         addToBroad(player,Math.round(playTicks),map);
         // 奖励，公告，结束
         RKS.give(player,Potentials.config.getInt("maps." + map + ".finishRKS"));
+        if (isFirstPlay(player, map)) {
+            PTT.give(player,Potentials.config.getDouble("maps." + map + ".finishRKS") / 100);
+            setPlayed(player, map);
+        }
         Bukkit.broadcastMessage(Config.getMsg("finish-map-front") + player1.getDisplayName() + Config.getMsg("finish-map-middle") + map + Config.getMsg("finish-map-after") + playSecond + " S " + playTicks + " Ticks");
         endPlaying(player);
     }

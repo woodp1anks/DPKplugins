@@ -33,7 +33,7 @@ public class CommandRKS implements CommandExecutor {
             commandSender.sendMessage(Config.getMsg("no-console"));
             return true;
         }
-        commandSender.sendMessage(Config.getMsg("get-RKS") + RKS.get(commandSender.getName()));
+        commandSender.sendMessage(Config.getMsg("see-RKS") + RKS.get(commandSender.getName()));
         return true;
     }
 }
