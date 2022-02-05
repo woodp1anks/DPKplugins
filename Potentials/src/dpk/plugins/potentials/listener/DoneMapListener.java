@@ -12,6 +12,9 @@ public class DoneMapListener implements Listener {
     public void e(PlayerMoveEvent e) {
         String playerName = e.getPlayer().getName();
         String playingMap = Map.getPlayingMap(playerName);
+        if (!e.getPlayer().hasPermission("prac.off")) {
+            return;
+        }
         if (playingMap == null) {
             return;
         }

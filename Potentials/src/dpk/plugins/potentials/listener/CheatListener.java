@@ -12,24 +12,12 @@ import org.bukkit.potion.PotionEffectType;
 
 public class CheatListener implements Listener {
     @EventHandler
-    public void e(PlayerTeleportEvent e) {
-        Player player = e.getPlayer();
-        String playerName = player.getName();
-        if (Potentials.config.getBoolean("data.is-restarting-" + playerName)) {
-            return;
-        }
-        if (player.hasPermission("ptt.cheat-bypass")) {
-            return;
-        }
-        if (Map.checkIsPlayingMap(playerName)) {
-            player.sendMessage(Config.getMsg("playing-cheat"));
-            Map.endPlaying(playerName);
-        }
-    }
-    @EventHandler
     public void e(PlayerMoveEvent e) {
         Player player = e.getPlayer();
         String playerName = player.getName();
+        if (!player.hasPermission("prac.off")) {
+            return;
+        }
         if (Potentials.config.getBoolean("data.is-restarting-" + playerName)) {
             return;
         }
