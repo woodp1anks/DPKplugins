@@ -2,6 +2,7 @@ package dpk.plugins.potentials.command;
 
 import dpk.plugins.potentials.Potentials;
 import dpk.plugins.potentials.method.Config;
+import jdk.jfr.Name;
 import org.bukkit.Location;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -26,8 +27,10 @@ public class EditMap implements CommandExecutor {
                     if (!strings[1].equals("finishRKS")) {
                         if (!strings[1].equals("rksReq")) {
                             if (!strings[1].equals("pttReq")) {
-                                commandSender.sendMessage(Config.getMsg("wrong-edit"));
-                                return false;
+                                if (!strings[1].equals("difficulty")) {
+                                    commandSender.sendMessage(Config.getMsg("wrong-edit"));
+                                    return false;
+                                }
                             }
                         }
                     }
@@ -107,6 +110,14 @@ public class EditMap implements CommandExecutor {
             String world = ((Player) commandSender).getWorld().getName();
             Potentials.config.set("maps." + strings[0] + ".world",world);
             commandSender.sendMessage(Config.getMsg("success-set-map-world"));
+        }
+        if (strings[1].equals("difficulty")) {
+            if (strings.length != 3) {
+                commandSender.sendMessage(Config.getMsg("edit-help-difficulty"));
+                return true;
+            }
+            Potentials.config.set("maps." + strings[0] + ".difficulty",Double.parseDouble(strings[2]));
+            commandSender.sendMessage(Config.getMsg("success-set-map-difficulty"));
         }
         if (strings[1].equals("finishRKS")) {
             if (strings.length != 3) {

@@ -49,8 +49,7 @@ public class Map {
         // 查看玩家是不是正在玩
         if (checkIsPlayingMap(player)) {
             Player player1 = Bukkit.getPlayer(player);
-            player1.sendMessage(Config.getMsg("already-playing"));
-            return;
+            player1.performCommand("stopplay");
         }
         // 符不符合要求
         if (!checkRKSReq(player,map) || !checkPTTReq(player, map)) {
@@ -73,7 +72,6 @@ public class Map {
         Potentials.config.set("data.playing-map-" + player,map);
         // 开始计时,存储开始时的计时
         long startTime = new Date().getTime();
-        // long startTimeSecond = startTime / 1000;
         Potentials.config.set("data.start-map-time-" + player,startTime);
     }
     public static void done(String player,String map) {
@@ -90,7 +88,6 @@ public class Map {
         }
         // 停止计时,获取游玩时长
         long endTime = new Date().getTime();
-        // long endTimeSecond = endTime / 1000;
         long startTime = Potentials.config.getLong("data.start-map-time-" + player);
         long playTime = endTime - startTime;
         long playSecond = playTime / 1000;

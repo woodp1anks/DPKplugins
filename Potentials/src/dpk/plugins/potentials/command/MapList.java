@@ -2,6 +2,7 @@ package dpk.plugins.potentials.command;
 
 import dpk.plugins.potentials.Potentials;
 import dpk.plugins.potentials.method.Config;
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -32,10 +33,11 @@ public class MapList implements CommandExecutor {
         for(int i = viewMap;;i++) {
             try {
                 String currentMap = maps.get(i);
+                double mapDifficulty = Potentials.config.getDouble("maps." + currentMap + ".difficulty");
                 if (i >= viewMap + 12) {
                     break;
                 }
-                commandSender.sendMessage(Config.getMsg("map-list-front-map") + currentMap);
+                commandSender.sendMessage(Config.getMsg("map-list-front-map") + currentMap + " " + ChatColor.YELLOW + mapDifficulty);
             } catch (IndexOutOfBoundsException ex) {
                 break;
             }

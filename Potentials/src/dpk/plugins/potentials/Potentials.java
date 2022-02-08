@@ -13,7 +13,6 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.util.Arrays;
-import java.util.Calendar;
 import java.util.Date;
 
 public class Potentials extends JavaPlugin {
@@ -28,7 +27,6 @@ public class Potentials extends JavaPlugin {
     public void onEnable() {
         config = getConfig();
         potentials = this;
-        serverDate = new Date();
 
         Bukkit.getPluginManager().registerEvents(new DoneMapListener(),potentials);
         // Bukkit.getPluginManager().registerEvents(new ReStartMapListener(),potentials);
@@ -45,16 +43,8 @@ public class Potentials extends JavaPlugin {
         Bukkit.getPluginCommand("editMap").setExecutor(new EditMap());
         Bukkit.getPluginCommand("mapList").setExecutor(new MapList());
         Bukkit.getPluginCommand("rePlay").setExecutor(new RePlay());
-        Bukkit.getPluginCommand("broad").setExecutor(new Broad());
+        Bukkit.getPluginCommand("board").setExecutor(new Board());
         Bukkit.getPluginCommand("mapInfo").setExecutor(new MapInfo());
-        ByteArrayOutputStream exm = new ByteArrayOutputStream();
-        try {
-            ObjectOutputStream outputStream = new ObjectOutputStream(exm);
-            outputStream.writeObject(new ItemStack(Material.AIR));
-            getLogger().info(Arrays.toString(exm.toByteArray()));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 
     }
     @Override
